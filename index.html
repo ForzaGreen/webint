@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -43,17 +43,47 @@
             </form>-->
             <div>
                 <input id="address" type="text" value="2400 Route des Dolines 06560 Valbonne">
-                <input id="addressButton" type="button" value="Change location" onclick="lookup()">
+                <input type="button" value="Change location" onclick="lookup()">
                 <div id="mapcanvas" ></div>
             </div>
         </article>
 
 
         <article>
-            <video autoplay src="https://upload.wikimedia.org/wikipedia/commons/transcoded/9/93/Elaphants_Dream.ogg/Elaphants_Dream.ogg.480p.webm" controls="true" width="320" height="240">
-                <source>
+            <h1>Third blog post</h1>
+            <div>
+                <input id="url" type="text" value="https://ia601702.us.archive.org/11/items/008ClaudeFischler/008-ClaudeFischler.mp4">
+                <input type="button" value="Play Video" onclick="playVideo()">
+            </div>
+            <div>
+                <input id="timeInteger" type="text" value="30">
+                <input type="button" value="Jump To" onclick="jumpTo()">
+            </div>
+            <div>
+                <input id="degrees" type="text" value="180">
+                <input type="button" value="Rotate" onclick="rotate()">
+            </div>
+            <div>
+                <input type="button" value="Miror" onclick="mirror()">
+            </div>
+            <video id="video1" autoplay controls="true" width="320">
+                <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/9/93/Elaphants_Dream.ogg/Elaphants_Dream.ogg.480p.webm">
+                <!-- source src="...mp4" -->
             </video>
+            <div>
+                <input id="controls" type="checkbox" onclick="displayControls()" checked>Controls
+            </div>
+            <div>
+                <input type="button" value="Preview" onclick="preview()"><br>
+                <canvas id="previewPhoto" height="0"></canvas>
+            </div>
         </article>
+
+        <article>
+            <h1>Fourth blog post</h1>
+            <!-- I'll do it later -->
+        </article>
+
         <nav>
             <ul>Home</ul>
             <ul>About</ul>
@@ -67,7 +97,7 @@
     </aside>
 
     <footer>
-        <!--Problème Footer-->
+        <!-- Footer-->
     </footer>
 
 </body>
